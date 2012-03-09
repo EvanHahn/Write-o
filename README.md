@@ -1,4 +1,4 @@
 Writeo
 ======
 
-The goal: simple, simple, distraction-free writing.
+The goal: simple simple distraction-free writing.
