@@ -22,27 +22,11 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
 	line-height: 1;
 }
 ol, ul {
 	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
 }
 
 /*
@@ -66,10 +50,63 @@ body {
 	height: 95%;
 	margin: 1% 0;
 	border: 0;
-	font-size: 12pt;
+	font-size: 14pt;
 	outline: 0;
 	resize: none;
 	background: transparent;
+}
+
+.no-js #toolbar {
+	display: none;
+}
+
+#toolbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	padding: 0.5em;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	-webkit-transition: opacity 0.5s ease 0s;
+	-moz-transition: opacity 0.5s ease 0s;
+	-o-transition: opacity 0.5s ease 0s;
+	-ms-transition: opacity 0.5s ease 0s;
+	transition: opacity 0.5s ease 0s;
+}
+
+#toolbar:hover {
+	opacity: 1;
+	-webkit-transition: opacity 0.5s ease 0.5s;
+	-moz-transition: opacity 0.5s ease 0.5s;
+	-o-transition: opacity 0.5s ease 0.5s;
+	-ms-transition: opacity 0.5s ease 0.5s;
+	transition: opacity 0.5s ease 0.5s;
+}
+
+#toolbar ul {
+	display: block;
+	opacity: 1.5;
+}
+
+#toolbar ul li {
+	display: inline;
+	margin: 0 0.25em;
+}
+
+#toolbar ul li a {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	border: 2px solid white;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 2em;
+	text-decoration: none;
+	overflow: hidden;
+	background-color: black;
 }
 
 /*
